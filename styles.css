@@ -103,8 +103,11 @@ body {
 }
 
 .founder img {
-    width: 200px;
-    border-radius: 15px;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #22c55e;
 }
 
 /* FOOTER */
