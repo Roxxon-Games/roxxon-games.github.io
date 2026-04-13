@@ -4,135 +4,111 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ROXXON Games</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-}
-
-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #1e293b, #020617);
-}
-
-header h1 {
-    font-size: 50px;
-    margin: 0;
-}
-
-header p {
-    font-size: 18px;
-    color: #94a3b8;
-}
-
-.container {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.games {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: #1e293b;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 15px;
-}
-
-.card h3 {
-    margin: 0;
-}
-
-.card p {
-    color: #cbd5f5;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #22c55e;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-    color: #94a3b8;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <h1>ROXXON Games 🎮</h1>
-    <p>Creating fun and addictive mobile games</p>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="ROXXON Logo">
+        <span>ROXXON Games</span>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>Creating Addictive Mobile Games 🎮</h1>
+    <p>Indie game studio crafting fun, challenging, and engaging experiences</p>
 </header>
 
-<div class="container">
-
+<!-- GAMES -->
+<section class="container">
     <h2>Our Games</h2>
 
     <div class="games">
 
+        <!-- Angry Dragons -->
         <div class="card">
-            <img src="https://play-lh.googleusercontent.com/your-image1" alt="Angry Dragons">
+            <img src="images/angry-dragons.jpg" alt="Angry Dragons">
             <div class="card-content">
                 <h3>Angry Dragons</h3>
-                <p>Launch dragons and destroy enemy structures in this addictive physics game.</p>
+                <p>
+                    A physics-based destruction game where you launch dragons to destroy enemy towers.
+                    Inspired by classic arcade mechanics with explosive gameplay.
+                </p>
+                <ul>
+                    <li>🔥 Physics-based gameplay</li>
+                    <li>🎯 Strategic aiming</li>
+                    <li>💥 Destruction mechanics</li>
+                </ul>
                 <a class="btn" href="https://play.google.com/store/apps/details?id=com.roxxongames.angrydragons" target="_blank">Play Now</a>
             </div>
         </div>
 
+        <!-- AOS 2 -->
         <div class="card">
-            <img src="https://play-lh.googleusercontent.com/your-image2" alt="Adventure of Sphere II">
+            <img src="images/aos2.jpg" alt="Adventure of Sphere II">
             <div class="card-content">
                 <h3>Adventure of Sphere II</h3>
-                <p>Roll, balance and survive challenging obstacles across exciting levels.</p>
+                <p>
+                    A challenging rolling ball game with advanced levels, traps, and smooth controls.
+                </p>
+                <ul>
+                    <li>⚡ Smooth controls</li>
+                    <li>🧠 Skill-based levels</li>
+                    <li>🚧 Obstacles & traps</li>
+                </ul>
                 <a class="btn" href="https://play.google.com/store/apps/details?id=com.ROXXONGames.AdventureofSphere2" target="_blank">Play Now</a>
             </div>
         </div>
 
+        <!-- AOS 1 -->
         <div class="card">
-            <img src="https://play-lh.googleusercontent.com/your-image3" alt="Adventure of Sphere">
+            <img src="images/aos1.jpg" alt="Adventure of Sphere">
             <div class="card-content">
                 <h3>Adventure of Sphere</h3>
-                <p>Classic rolling ball adventure with fun physics and challenging gameplay.</p>
+                <p>
+                    Classic rolling ball adventure featuring fun physics and engaging level design.
+                </p>
+                <ul>
+                    <li>🎮 Casual gameplay</li>
+                    <li>🌍 Multiple levels</li>
+                    <li>⚙️ Physics mechanics</li>
+                </ul>
                 <a class="btn" href="https://play.google.com/store/apps/details?id=com.ROXXONGames.AOS" target="_blank">Play Now</a>
             </div>
         </div>
 
     </div>
+</section>
 
-</div>
+<!-- ABOUT -->
+<section class="about">
+    <h2>About ROXXON Games</h2>
+    <p>
+        ROXXON Games is an indie mobile game studio focused on creating fun,
+        addictive, and high-quality gaming experiences. We specialize in physics-based
+        and casual games designed for players of all ages.
+    </p>
+</section>
 
+<!-- FOUNDER -->
+<section class="founder">
+    <img src="images/founder.jpg" alt="Founder">
+    <div>
+        <h2>Founder</h2>
+        <p>
+            Hi, I'm <strong>Rafeeq Pasha</strong>, the founder of ROXXON Games.
+            I am a passionate indie game developer dedicated to building engaging
+            and creative mobile games. My goal is to deliver fun experiences that
+            players can enjoy anytime, anywhere.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
     <p>© 2026 ROXXON Games. All rights reserved.</p>
 </footer>
