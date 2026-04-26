@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 229 59% 10%;
+    --foreground: 0 0% 100%;
+    --card: 229 50% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 229 50% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 283 89% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --highlight: 47 100% 60%;
+    --highlight-foreground: 0 0% 10%;
+    --muted: 229 40% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 283 89% 64%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 229 40% 20%;
+    --input: 229 40% 20%;
+    --ring: 283 89% 64%;
+    --radius: 0.75rem;
+    --sidebar-background: 229 59% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 283 89% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 229 50% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 229 40% 20%;
+    --sidebar-ring: 283 89% 64%;
+  }
+
+  .dark {
+    --background: 229 59% 10%;
+    --foreground: 0 0% 100%;
+    --card: 229 50% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 229 50% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 283 89% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --highlight: 47 100% 60%;
+    --highlight-foreground: 0 0% 10%;
+    --muted: 229 40% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 283 89% 64%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 229 40% 20%;
+    --input: 229 40% 20%;
+    --ring: 283 89% 64%;
+    --sidebar-background: 229 59% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 283 89% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 229 50% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 229 40% 20%;
+    --sidebar-ring: 283 89% 64%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    overflow-x: clip;
+    background-image: radial-gradient(circle at top, rgba(168, 85, 247, 0.12), transparent 28%), radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.08), transparent 30%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Rajdhani", sans-serif;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .neon-glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3);
+  }
+
+  .neon-glow-blue {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+
+  .neon-text-purple {
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.8), 0 0 20px rgba(168, 85, 247, 0.5);
+  }
+
+  .neon-text-blue {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  .card-glow-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-glow-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .glow-yellow {
+    box-shadow: 0 0 24px rgba(251, 191, 36, 0.35), 0 0 50px rgba(251, 191, 36, 0.18);
+  }
+
+  .brand-text-glow:hover {
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.25);
+  }
+
+  .hero-float {
+    animation: float 10s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
